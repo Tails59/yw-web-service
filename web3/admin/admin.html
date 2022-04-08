@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EventSystem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/Dark-NavBar.css">
+    <link rel="stylesheet" href="../assets/css/Landing-Section-with-Call-to-Action-BS4.css">
+    <link rel="stylesheet" href="../assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="../assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="../assets/css/sticky-dark-top-nav-with-dropdown.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/Tamplate-SB-Admin-on-BSS.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button">
+        <div class="container">
+            <div><a class="navbar-brand" href="../index.html"><span><img src="../assets/img/logo.png">Events R Us</span> </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item"></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#">Events</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="../events.html">All Events</a><a class="dropdown-item" href="#">My Events</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="admin2.html">Admin</a></li>
+                </ul>
+                <p class="ml-auto navbar-text actions"><a class="login" href="../login.html">Log In</a> <a class="btn btn-light action-button" role="button" href="signup.html">Sign Up</a></p>
+            </div>
+        </div>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <div id="sidenavAccordion" class="sb-sidenav accordion sb-sidenav-dark" style="background: rgb(34, 34, 34);">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div>
+                            <div class="sb-sidenav-menu-heading"><span>Menu</span></div><a class="nav-link active" href="#">
+                                <div class="sb-nav-link-icon"><i class="fa fa-dashboard"></i></div><span>Dashboard</span>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="sb-sidenav-menu-heading"><span>Events</span></div><a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"><i class="fa fa-dashboard"></i></div><span>View Events</span>
+                            </a><a class="nav-link" href="#">
+                                <div class="sb-nav-link-icon"><i class="fa fa-dashboard"></i></div><span>Create New Event</span>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="sb-sidenav-menu-heading"><span>Users</span></div><a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                <div class="sb-nav-link-icon"><i class="fa fa-dashboard"></i></div><span>Accordion 2 Layer</span>
+                                <div class="sb-sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div>
+                            </a>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#sidenavAccordion">
+                                <div id="sidenavAccordionPages" class="sb-sidenav-menu-nested nav accordion"><a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth"><span>Menu Item</span>
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div>
+                                    </a>
+                                    <div id="pagesCollapseAuth" class="collapse" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                                        <div class="sb-sidenav-menu-nested nav"><a class="nav-link" href="#">Menu Item</a><a class="nav-link" href="#">Menu Item</a><a class="nav-link" href="#">Menu Item</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer">
+                    <div class="small"><span></span></div>
+                </div>
+            </div>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container" id="pageContent">
+                    <div id="viewEvents" style="display: none">
+                        <div class="table-responsive" id="eventsTable" style="margin: 15px;">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>EventID</th>
+                                        <th>Description</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cell 1</td>
+                                        <td>Cell 2</td>
+                                        <td>Text</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cell 3</td>
+                                        <td>Cell 4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="createEvent">
+                        <form class="text-center">
+                            <h2 class="text-center">Create Event</h2>
+                            <div class="form-group text-center row" style="margin: 50px;"><label class="col-sm-2 col-form-label" for="event-description" style="height: 33px;">Description</label>
+                                <div class="col-sm-10"><input class="form-control" type="text" id="event-description"></div>
+                            </div>
+                            <div class="form-group text-center row" style="margin: 50px;"><label class="col-sm-2 col-form-label" for="event-description" style="height: 33px;">Location</label>
+                                <div class="col-sm-10"><input class="form-control" type="text" id="event-location"></div>
+                            </div>
+                            <div class="form-group text-center row" style="margin: 50px;"><label class="col-sm-2 col-form-label" for="event-description" style="height: 33px;">Date</label>
+                                <div class="col-sm-10"><input class="form-control" id="eventDate" type="date"></div>
+                            </div>
+                            <div class="form-group text-center row" style="margin: 50px;"><label class="col-sm-2 col-form-label" for="event-description" style="height: 33px;">Time</label>
+                                <div class="col-sm-10"><input class="form-control" id="eventTime" type="time"></div>
+                            </div>
+                            <div class="form-group text-center row" style="margin: 50px;"><label class="col-sm-2 col-form-label" for="event-description" style="height: 33px;">Duration</label>
+                                <div class="col-sm-10"><input class="form-control" type="text" id="event-description-1"></div>
+                            </div>
+                            <div class="form-group text-center row" style="margin: 50px;"><label class="col-sm-2 col-form-label" for="event-description" style="height: 33px;">Capacity</label>
+                                <div class="col-sm-10"><input class="form-control" type="number" id="event-capacity"></div>
+                            </div><button class="btn btn-primary mb-2" type="submit">Create Event</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/event_view.js"></script>
+    <script src="../assets/js/events.js"></script>
+    <script src="../assets/js/login.js"></script>
+</body>
+
+</html>
