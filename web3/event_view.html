@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EventSystem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="assets/css/Dark-NavBar.css">
+    <link rel="stylesheet" href="assets/css/Landing-Section-with-Call-to-Action-BS4.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/sticky-dark-top-nav-with-dropdown.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Tamplate-SB-Admin-on-BSS.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button">
+        <div class="container">
+            <div><a class="navbar-brand" href="index.html"><span><img src="assets/img/logo.png">Events R Us</span> </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item"></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#">Events</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="events.html">All Events</a><a class="dropdown-item" href="#">My Events</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="admin/admin.html">Admin</a></li>
+                </ul>
+                <p class="ml-auto navbar-text actions"><a class="login" href="login.html">Log In</a> <a class="btn btn-light action-button" role="button" href="signup.html">Sign Up</a></p>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="text-center" id="event_title">Heading</h1>
+        <div class="table-responsive table-borderless" id="eventsTable">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td id="event_description">Cell 1</td>
+                        <td id="event_capacity">Cell 2</td>
+                    </tr>
+                    <tr>
+                        <td id="event_location">Cell 3</td>
+                        <td id="event_capacity">Cell 4</td>
+                    </tr>
+                    <tr>
+                        <td id="event_date">Cell 3</td>
+                        <td><input type="text" id="user-id"></td>
+                    </tr>
+                    <tr>
+                        <td id="event_time">Cell 3</td>
+                        <td id="event_register">Cell 4</td>
+                    </tr>
+                    <tr>
+                        <td id="event_duration">Cell 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/event_view.js"></script>
+    <script src="assets/js/events.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>
